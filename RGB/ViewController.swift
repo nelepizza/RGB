@@ -19,6 +19,11 @@ class ViewController: UIViewController {
     @IBOutlet var greenSlider: UISlider!
     @IBOutlet var blueSlider: UISlider!
     
+//    var redData: Float = 0.5
+//    var greenData: Float = 0.5
+//    var blueData: Float = 0.5
+//
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -26,18 +31,29 @@ class ViewController: UIViewController {
         redLabel.text = String(redSlider.value)
         greenLabel.text = String(greenSlider.value)
         blueLabel.text = String(blueSlider.value)
+        
+   //     print(redData)
+        
+//        screenView.backgroundColor = UIColor(red: CGFloat(redData), green: 0, blue: 0, alpha: 1.0)
+//
+
     }
 
     @IBAction func redScaleSet() {
         redLabel.text = String(round(redSlider.value * 1000) / 1000 )
+  
+        screenView.backgroundColor = UIColor(red: CGFloat(redSlider.value), green: CGFloat(greenSlider.value), blue: CGFloat(blueSlider.value), alpha: 1.0)
     }
     
     @IBAction func grenScaleSet() {
         greenLabel.text = String(round(greenSlider.value * 1000) / 1000 )
+        
+        screenView.backgroundColor = UIColor(red: CGFloat(redSlider.value), green: CGFloat(greenSlider.value), blue: CGFloat(blueSlider.value), alpha: 1.0)
     }
     
     @IBAction func blueScaleSet() {
         blueLabel.text = String(round(blueSlider.value * 1000) / 1000 )
+        screenView.backgroundColor = UIColor(red: CGFloat(redSlider.value), green: CGFloat(greenSlider.value), blue: CGFloat(blueSlider.value), alpha: 1.0)
     }
     
 }
