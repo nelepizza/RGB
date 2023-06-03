@@ -39,7 +39,7 @@
                                         <rect key="frame" x="139.33333333333337" y="0.0" width="215.66666666666663" height="31"/>
                                         <color key="tintColor" systemColor="systemPinkColor"/>
                                         <connections>
-                                            <action selector="redScaleSet" destination="BYZ-38-t0r" eventType="valueChanged" id="kPM-ES-Eu9"/>
+                                            <action selector="rgbSliderAction" destination="BYZ-38-t0r" eventType="valueChanged" id="kPM-ES-Eu9"/>
                                         </connections>
                                     </slider>
                                 </subviews>
@@ -67,7 +67,7 @@
                                         <rect key="frame" x="139.33333333333337" y="0.0" width="215.66666666666663" height="31"/>
                                         <color key="tintColor" systemColor="systemGreenColor"/>
                                         <connections>
-                                            <action selector="grenScaleSet" destination="BYZ-38-t0r" eventType="valueChanged" id="bBk-iw-EZV"/>
+                                            <action selector="rgbSliderAction" destination="BYZ-38-t0r" eventType="valueChanged" id="fNg-eo-bUK"/>
                                         </connections>
                                     </slider>
                                 </subviews>
@@ -95,7 +95,7 @@
                                         <rect key="frame" x="139.33333333333337" y="0.0" width="215.66666666666663" height="31"/>
                                         <color key="tintColor" systemColor="systemBlueColor"/>
                                         <connections>
-                                            <action selector="blueScaleSet" destination="BYZ-38-t0r" eventType="valueChanged" id="WrD-US-inJ"/>
+                                            <action selector="rgbSliderAction" destination="BYZ-38-t0r" eventType="valueChanged" id="dLM-zx-tS6"/>
                                         </connections>
                                     </slider>
                                 </subviews>
