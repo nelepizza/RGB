@@ -124,12 +124,12 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="blueScale" destination="EXl-uv-0Pk" id="uFr-JI-p1r"/>
-                        <outlet property="blueScaleData" destination="Cu5-9I-U9V" id="Tzr-yK-j8a"/>
-                        <outlet property="greenScale" destination="60f-BM-msS" id="Lla-Qb-8e4"/>
-                        <outlet property="greenScaleData" destination="06j-fs-NU6" id="u0Y-Vf-G79"/>
-                        <outlet property="redScale" destination="MjC-pd-4rZ" id="UDe-tp-me9"/>
-                        <outlet property="redScaleData" destination="pYY-wM-Tx5" id="8tj-fu-Gfn"/>
+                        <outlet property="blueLabel" destination="Cu5-9I-U9V" id="Tzr-yK-j8a"/>
+                        <outlet property="blueSlider" destination="EXl-uv-0Pk" id="uFr-JI-p1r"/>
+                        <outlet property="greenLabel" destination="06j-fs-NU6" id="u0Y-Vf-G79"/>
+                        <outlet property="greenSlider" destination="60f-BM-msS" id="Lla-Qb-8e4"/>
+                        <outlet property="redLabel" destination="pYY-wM-Tx5" id="8tj-fu-Gfn"/>
+                        <outlet property="redSlider" destination="MjC-pd-4rZ" id="UDe-tp-me9"/>
                         <outlet property="screenView" destination="tcV-W7-cbQ" id="tOV-BS-msY"/>
                     </connections>
                 </viewController>

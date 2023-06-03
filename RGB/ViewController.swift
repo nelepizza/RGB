@@ -11,29 +11,33 @@ class ViewController: UIViewController {
 
     @IBOutlet var screenView: UIView!
     
-    @IBOutlet var redScaleData: UILabel!
-    @IBOutlet var greenScaleData: UILabel!
-    @IBOutlet var blueScaleData: UILabel!
+    @IBOutlet var redLabel: UILabel!
+    @IBOutlet var greenLabel: UILabel!
+    @IBOutlet var blueLabel: UILabel!
     
-    @IBOutlet var redScale: UISlider!
-    @IBOutlet var greenScale: UISlider!
-    @IBOutlet var blueScale: UISlider!
+    @IBOutlet var redSlider: UISlider!
+    @IBOutlet var greenSlider: UISlider!
+    @IBOutlet var blueSlider: UISlider!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         screenView.layer.cornerRadius = 10
-        
-        
+        redLabel.text = String(redSlider.value)
+        greenLabel.text = String(greenSlider.value)
+        blueLabel.text = String(blueSlider.value)
     }
 
     @IBAction func redScaleSet() {
+        redLabel.text = String(round(redSlider.value * 1000) / 1000 )
     }
     
     @IBAction func grenScaleSet() {
+        greenLabel.text = String(round(greenSlider.value * 1000) / 1000 )
     }
     
     @IBAction func blueScaleSet() {
+        blueLabel.text = String(round(blueSlider.value * 1000) / 1000 )
     }
     
 }
