@@ -28,24 +28,25 @@ class ViewController: UIViewController {
         greenLabel.text = String(greenSlider.value)
         blueLabel.text = String(blueSlider.value)
         
-        screenView.backgroundColor = UIColor(red: CGFloat(redSlider.value), green: CGFloat(greenSlider.value), blue: CGFloat(blueSlider.value), alpha: 1.0)
+        setScreenView()
     }
 
     @IBAction func redScaleSet() {
-        redLabel.text = String(round(redSlider.value * 1000) / 1000 )
-  
-        screenView.backgroundColor = UIColor(red: CGFloat(redSlider.value), green: CGFloat(greenSlider.value), blue: CGFloat(blueSlider.value), alpha: 1.0)
+        redLabel.text = String(round(redSlider.value * 100) / 100 )
+        setScreenView()
     }
     
     @IBAction func grenScaleSet() {
-        greenLabel.text = String(round(greenSlider.value * 1000) / 1000 )
-        
-        screenView.backgroundColor = UIColor(red: CGFloat(redSlider.value), green: CGFloat(greenSlider.value), blue: CGFloat(blueSlider.value), alpha: 1.0)
+        greenLabel.text = String(round(greenSlider.value * 100) / 100 )
+        setScreenView()
     }
     
     @IBAction func blueScaleSet() {
         blueLabel.text = String(round(blueSlider.value * 1000) / 1000 )
-        
+        setScreenView()
+    }
+    
+    func setScreenView() {
         screenView.backgroundColor = UIColor(red: CGFloat(redSlider.value), green: CGFloat(greenSlider.value), blue: CGFloat(blueSlider.value), alpha: 1.0)
     }
 }
