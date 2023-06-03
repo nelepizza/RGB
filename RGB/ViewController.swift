@@ -69,8 +69,8 @@ class ViewController: UIViewController {
                 blueLabel.text = String(format: "%.2f", blueSlider.value)
             }
         }
-//        redLabel.text = String(format: "%.2f", redSlider)
-//        greenLabel.text = String(format: "%.2f", greenSlider)
-//        blueLabel.text = String(format: "%.2f", blueSlider)
+//        redLabel.text = String(format: "%.2f", redSlider.value)
+//        greenLabel.text = String(format: "%.2f", greenSlider.value)
+//        blueLabel.text = String(format: "%.2f", blueSlider.value)
     }
 }
